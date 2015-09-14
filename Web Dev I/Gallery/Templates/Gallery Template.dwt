@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Gallery</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../CSS/layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+  <div class="logo">The Gallery Portrait and Faimly Photography</div>
+  <div class="navigation">Home Services Portfolio Pricing Session Content</div>
+  <div class="image">Content for  class "image" Goes Here</div>
+  <!-- TemplateBeginEditable name="contentArea" -->
+  <div class="content">Insert page content here!</div>
+  <!-- TemplateEndEditable -->
+  <div class="footer">Copyright 2015. All Rights Reserved. Website design by Chelsea Schaefer.</div>
+</div>
+</body>
+</html>

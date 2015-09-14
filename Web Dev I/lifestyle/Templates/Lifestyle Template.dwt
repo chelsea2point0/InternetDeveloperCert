@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Healthy Lifestyle</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../css/lifestyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+  <div class="header">Tips for Living a Healthy Lifestyle</div>
+  <div class="navigation">
+    <p>Home</p>
+    <p>Nutrition</p>
+    <p>Exercise</p>
+    <p>Habits</p>
+    <p>Sign Up</p>
+  </div>
+  <!-- TemplateBeginEditable name="contentArea" -->
+  <div class="content">Insert content here.</div>
+  <div class="footer">Web Site Design by:<br>
+    Chelsea Schaefer
+  </div>
+  <!-- TemplateEndEditable -->
+  <p>&nbsp;</p>
+</div>
+</body>
+</html>

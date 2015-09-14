@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 3.2 Chelsea Schaefer</title>
+</head>
+<body>
+	<script>
+		var tempF = prompt("What is the temperature outside (Fahrenheit)?", "");
+		if (isNaN(tempF)) {
+			alert("ERROR: You did not enter a number.");
+		}
+		else {
+		var tempC = parseFloat(5 / 9 * (tempF - 32));
+			alert("Fun Fact: That is " + tempC.toFixed(2) + " degrees Celsius");
+		}
+	</script>
+</body>
+</html>

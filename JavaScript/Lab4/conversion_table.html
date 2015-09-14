@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 4 Chelsea Schaefer</title>
+</head>
+<body>
+	<table border=1>
+	<th colspan="2">Temperature Conversion Table</th>
+	<tr>
+		
+		<td>FAHRENHEIT</td>
+		<td>CELSIUS</td>
+	</tr>
+	<script type="text/javascript">
+		for (var tempF = 20; tempF <= 120; tempF += 5) {
+			var rawTempC = parseFloat(5 / 9 * (tempF - 32));
+			var tempC = rawTempC.toFixed(2)
+			document.write("<tr><td>" + tempF.toFixed(2) + "&deg" + "</td><td>" + tempC + "&deg" + "</td></tr>");
+		}
+	</script>
+	</table>
+</body>
+</html>

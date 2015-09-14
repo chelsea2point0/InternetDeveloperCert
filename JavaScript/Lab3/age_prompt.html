@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 3.1 Chelsea Schaefer</title>
+</head>
+<body>
+	<script>
+		var answer = prompt("How old are you?" , "");
+		var int = parseInt(answer);
+		if (int < 0) {
+			alert("ERROR: Your age cannot be a negative number.");
+		}
+		else if (int >= 0 && int <= 12) {
+			alert("You're not a teenager yet, kiddo!");
+		}
+		else if (int > 12 && int < 20) {
+			alert("Teenagers rock!");
+		}
+		else if (int >= 20) {
+			alert("You're not a teenager anymore, but you are still young at heart!");
+		}
+		else if (isNaN(int)) {
+			alert("ERROR: You did not enter a number.");
+		}
+	</script>
+</body>
+</html>

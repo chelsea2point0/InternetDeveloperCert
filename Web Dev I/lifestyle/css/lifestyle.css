@@ -1,0 +1,44 @@
+@charset "utf-8";
+.container {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.header {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20pt;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #039;
+	height: 100px;
+	width: 800px;
+	margin-bottom: 10px;
+}
+.navigation {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	color: #333;
+	background-color: #9CF;
+	float: left;
+	height: 400px;
+	width: 100px;
+	margin-right: 10px;
+	padding-left: 10px;
+	border: thin solid #003;
+}
+.content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	padding: 5px;
+	float: left;
+	height: 400px;
+	width: 650px;
+	margin-left: 10px;
+}
+.footer {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10pt;
+	float: left;
+	width: 800px;
+	border: thin solid #333;
+}

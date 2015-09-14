@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Justin's Lawn Care Service</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../css/lawn.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+  <div class="header">Justin's Lawn Care Service</div>
+  <div class="navigation">Home Services Landscape Prices Quote Contact</div>
+  <!-- TemplateBeginEditable name="contentArea" -->
+  <div class="content">
+    <p>Insert content here</p>
+  </div>
+  <!-- TemplateEndEditable -->
+  <div class="sidebar">100% Satisfaction Guaranteed or Your Money Back! That's Our Promise to You!</div>
+  <div class="footer">Web Site Design by: Chelsea Schaefer</div>
+</div>
+</body>
+</html>

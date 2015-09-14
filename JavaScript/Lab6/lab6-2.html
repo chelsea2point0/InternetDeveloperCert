@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html>
+ <head>
+	<title>Lab 6-2 Chelsea Schaefer</title>
+ </head>
+ <body>
+	<script type="text/javascript">
+		var buckets = prompt("Number of buckets of paint: ", "");
+		var cost = prompt("Cost per paint bucket (in dollars): ", "");
+		var color = prompt("What color paint would you like?", "");
+		try {
+			if (buckets < 0) {
+				throw "Error1";
+			} else if (buckets == "") {
+				throw "Error2";
+			} else if (isNaN(buckets)) {
+				throw "Error3";
+			} else if (color == "white") {
+				throw "Error4";
+			}
+		}
+		catch(err) {
+			if (err == "Error1") {
+				alert("Error: You must enter a positive number of buckets.");
+				location.reload();
+			}
+			if (err == "Error2") {
+				alert("Error: You did not enter the number of paint buckets you are purchasing.");
+				location.reload();
+			}
+			if (err == "Error3") {
+				alert("Error: The value entered is not a number.");
+				location.reload();
+			}
+			if (err == "Error4") {
+				alert("Error: Please choose a color other than white");
+				location.reload();
+			}
+		}
+		var docUpdate = function(buckets, cost, color) {
+			document.write(buckets + " buckets of " + color + " paint will cost you $" + buckets * cost);
+			document.body.style.color = color;
+		}
+		docUpdate(buckets, cost, color);
+	</script>
+ </body>
+</html>
