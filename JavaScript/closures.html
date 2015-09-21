@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Closures are fun!</title>
+	<script type="text/javascript">
+		function draw(item, color) {
+			var str = "I will draw a " + item + " that is " + color; // local variable
+			var tellPhrase = function() {
+				document.write("<b>" + str + ".</p><br>");
+			}
+			return tellPhrase; // return a reference to the function
+		}
+	</script>
+</head>
+<body>
+	<h1>An Open Discussion of Closures</h1>
+	<script type="text/javascript">
+		var phrase1 = draw("sunflower", "yellow");
+		var phrase2 = draw("sky", "blue");
+		phrase1();
+		phrase2();
+	</script>
+</body>
+</html>

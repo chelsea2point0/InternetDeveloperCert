@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 8.4</title>
+<table border=1>
+	<th colspan="4">Customer Information</th>
+	<tr>
+		
+		<td> NAME </td>
+		<td> GENDER </td>
+		<td> PHOTO </td>
+		<td> OCCUPATION </td>
+	</tr>
+
+	<script type="text/javascript">
+		var custName = prompt("Customer Name: ", "");
+		var custGender = prompt("Customer Gender: ", "");
+		var custPhoto = prompt("Customer Photo: ", "");
+		var custOccupation = prompt("Customer Occupation: ", "");
+
+		var Customer = {
+			name: custName, 
+			gender: custGender,
+			photo: "<img src = ' "+custPhoto+" '>",
+			occupation: custOccupation,
+			showCustomer: function () {
+				document.write("<tr><td>" + custName + "</td>" + "<td>" + custGender + "</td>" + "<td>" + custPhoto + "</td>" + "<td>" + custOccupation + "</td></tr>");
+			}
+		};
+		Customer.showCustomer();
+	</script>
+</table>
+</head>
+<body>
+</body>
+</html>
