@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chelsea Schaefer - Lab 9</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// navigator properties
+		for (var property in navigator) {
+			str=navigator[property];
+			navProps = property+ str+"\n";
+		}
+		
+		// user's browser and os information
+		var BrowserName = "The Browser's Name is: " + navigator.appName + "\n";
+		var BrowserVersion = "The Browser version is: " + navigator.appVersion + "\n";
+		var platform = "The user's operating system is: " + navigator.platform + "\n";
+		
+		// Shockwave Flash supported by browser?
+		var num_of_plugins = navigator.plugins.length;
+		for (var i=0; i < num_of_plugins; i++) {
+			if (navigator.plugins[i].name == "Shockwave Flash") {
+				var flashSupported = "Shockwave Flash is supported by this browser\n";
+			} 
+		}
+		if (!flashSupported) {
+			var flashSupported = "Shockwave Flash is not supported by this browser\n";
+		}
+		
+		// color depth, height, width
+		var c = "Color Depth: " + screen.colorDepth + "\n";
+		var h = "Total Height: " + screen.height + "\n";
+		var w = "Total Width: " + screen.width + "\n";
+		
+		// combine all information into single alert box
+		alert(navProps + BrowserName + BrowserVersion + platform + flashSupported + c + h + w);
+	</script>
+</body>
+</html>

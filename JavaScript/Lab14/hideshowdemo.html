@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function hideshow() {
+	var firstPara = document.getElementById('para_1');
+	var link = document.getElementById('linkPara_5');
+	if (firstPara.style.display =='none') {
+		link.innerHTML = 'Hide paragraph 1';
+		firstPara.style.display = 'block';
+	} else {
+		firstPara.style.display = 'none';
+		link.innerHTML = 'Display paragraph 1';
+
+	}
+}
+
+function add_para() {
+	var newPara = document.createElement('p');
+	var paraText = document.createTextNode("New paragraph between paragraph 3 and paragraph 4");
+	newPara.setAttribute("style", "background-color: green; color: white;");
+	newPara.setAttribute("id", "green_para");
+	newPara.appendChild(paraText);
+	var location = document.getElementById("para_3");
+	location.appendChild(newPara);
+}
+
+function remove_para() {
+	var remove = document.getElementById('green_para');
+	var parent = document.getElementById('para_3');
+	parent.removeChild(remove);
+}
+//window.onload = init;
+</script>
+</head>
+<body>
+	<h1 id= "demo">Hide-Show Demo</h1>
+	<p id="para_1">This is paragraph 1</p>
+	<p id="para_2">This is paragraph 2</p>
+	<p id="para_3">This is paragraph 3</p>
+	<p id="para_4">This is paragraph 4</p>
+	<p><a id="linkPara_5" href="javascript:hideshow()">Hide paragraph 1</a></p>
+	<p id="para_6"><a href="javascript:add_para()">Add a paragraph</a></p>
+	<p id="para_5"><a href="javascript:remove_para()">Delete green paragraph</a></p>
+</body>
+</html>

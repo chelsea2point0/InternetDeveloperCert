@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab 7-2 Chelsea Schaefer</title>
+<script type="text/javascript">
+	var book = function(title, author, publisher, ISBN) {
+		this.title = title;
+		this.author = author;
+		this.publisher = publisher;
+		this.ISBN = ISBN;
+		this.show = show;
+	}
+	function show(obj, name) {
+			var result = "";
+			for (var prop in obj) {
+				result += name + "." + prop + " = " + obj[prop] + "<br>";
+			} 
+			return result;
+		};
+</script>
+</head>
+<body>
+	<script type="text/javascript">
+		book.prototype.displaytitle = function() {
+			document.write("The title of this book is " + this.title + "<br><br>");
+		}
+		book1 = new book("Where the Sidewalk Ends", "Shel Silverstein", "HarperCollins", "978-0060256678");
+		document.write(book1.show(book1, "book1"));
+		book1.displaytitle();
+		
+		book2 = new book("Where the Wild Things Are", "Maurice Sendak", "HarperCollins", "978-0064431781");
+		document.write(book2.show(book2, "book2"));
+		book2.displaytitle();
+		
+		book3 = new book("Where the Red Fern Grows", "Wilson Rawls", "Yearling", "978-0375806810");
+		document.write(book3.show(book3, "book3"));
+		book3.displaytitle();
+	</script>
+</body>
+</html>
